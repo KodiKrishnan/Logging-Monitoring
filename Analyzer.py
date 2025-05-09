@@ -12,7 +12,7 @@ from collections import deque
 from datetime import datetime, timedelta
 
 # Constants
-LOG_FILE_PATH = "./sample.log"
+LOG_FILE_PATH = "./app.log"
 ERROR_PATTERN = re.compile(r"ERROR")
 ALERT_THRESHOLD = 1
 ALERT_WINDOW = timedelta(seconds=60)
