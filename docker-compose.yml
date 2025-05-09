@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  log-analyzer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: log-analyzer
+    env_file:
+      - .env
+    volumes:
+      - ./sample.log:/app/sample.log:ro
+    stdin_open: true
+    tty: true
